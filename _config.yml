@@ -10,3 +10,8 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: compressed
