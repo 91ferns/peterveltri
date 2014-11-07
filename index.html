@@ -4,6 +4,25 @@ layout: default
 
 <div class="home">
 
+  <section class="slider">
+
+    <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="http://berkeley.directrouter.com/~nytagand/wp-content/uploads/2014/04/bigstock-Form-2430211.jpg" />
+        </li>
+        <li>
+          <img src="http://berkeley.directrouter.com/~nytagand/wp-content/uploads/2014/04/bigstock-Form-2430211.jpg" />
+        </li>
+        <li>
+          <img src="http://berkeley.directrouter.com/~nytagand/wp-content/uploads/2014/04/bigstock-Form-2430211.jpg" />
+        </li>
+      </ul>
+    </div> <!-- .flexslider -->
+
+  </section>
+
   <section class="bio">
 
     <div class="container">
@@ -17,7 +36,7 @@ layout: default
         </div>
         <div class="col-sm-7">
           <p>Download your NY DMV forms online now! You can fill out the forms before you come to speed up any wait time you may encounter. Don't forget to bring a photo ID! Call Today 518-453-0029</p>
-          <p><a href="#" class="btn btn-default">Read More</a></p>
+          <p><a href="{{ "/about" | prepend: site.baseurl }}" class="btn btn-default">Read More</a></p>
         </div>
 
 

@@ -6,6 +6,7 @@
 @import '_flexslider';
 
 $navheight: 60px;
+$footerheight: 50px;
 $font: "jaf-bernino-sans";
 
 @mixin header() {
@@ -15,6 +16,45 @@ $font: "jaf-bernino-sans";
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+/** Sticky Footer
+========================= */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -50px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: $footerheight;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+/**
+========================= */
 
 h3 {
   font-size: 20px;
@@ -156,7 +196,7 @@ aside.widget:hover {
 footer {
   background-color: #333333;
   color: white;
-  padding: 35px 0;
+  padding: 11px 0;
 }
 
 .ferns, a.ferns, a.ferns:link, {

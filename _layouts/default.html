@@ -6,17 +6,18 @@
 <body>
 
   {% include header.html %}
-  <main class="page-content">
 
-    {% include slider.html %}
+  <main class="page-content" id="wrap">
 
     <article class="wrap">
     {{ content }}
     </div>
 
-    {% include footer.html %}
+    <div id="push"></div>
 
   </main>
+
+  {% include footer.html %}
 
 </body>
 
