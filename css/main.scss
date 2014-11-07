@@ -2,4 +2,38 @@
 ---
 
 @import 'fa/_fa';
-@import 'bootstrap/bootstrap'
+@import 'bootstrap/bootstrap';
+@import '_flexslider';
+
+$navheight: 60px;
+
+nav.navbar {
+  height: $navheight;
+}
+
+.navbar-brand {
+  line-height: $navheight;
+  height: $navheight;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+main {
+  padding-top: 59px;
+}
+
+.slider .slides > li, .slider {
+  //this is a slide
+  min-height: 400px;
+  height: 75vh;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+.flex-control-nav {
+  bottom: 20px;
+}
