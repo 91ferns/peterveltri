@@ -2,19 +2,83 @@
 layout: default
 ---
 
-<div class="home container">
+<div class="home">
 
-  <h1>Posts</h1>
+  <section class="bio">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="container">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="row">
+
+        <div class="col-sm-3">
+          <figure class="thumbnail">
+            <img src="#">
+          </figure>
+        </div>
+        <div class="col-sm-7">
+          <p>Download your NY DMV forms online now! You can fill out the forms before you come to speed up any wait time you may encounter. Don't forget to bring a photo ID! Call Today 518-453-0029</p>
+          <p><a href="#" class="btn btn-default">Read More</a></p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="asides">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-4">
+
+          <aside class="widget">
+            <span class="icon"><i class="fa fa-file-o"></i></span>
+
+            <h3>NY DMV Forms</h3>
+
+            <p>
+              Download your NY DMV forms online now! You can fill out the forms before you come to speed up any wait time you may encounter.
+            </p>
+          </aside>
+
+        </div>
+
+        <div class="col-sm-4">
+
+          <aside class="widget">
+            <span class="icon"><i class="fa fa-usd"></i></span>
+
+            <h3>Low Prices</h3>
+
+            <p>
+              Download your NY DMV forms online now! You can fill out the forms before you come to speed up any wait time you may encounter.
+            </p>
+          </aside>
+
+        </div>
+
+        <div class="col-sm-4">
+
+          <aside class="widget">
+            <span class="icon"><i class="fa fa-area-chart"></i></span>
+
+            <h3>NY DMV Services</h3>
+
+            <p>
+              Download your NY DMV forms online now! You can fill out the forms before you come to speed up any wait time you may encounter.
+            </p>
+          </aside>
+
+        </div>
+
+      </div> <!-- .row -->
+
+    </div> <!-- .container -->
+
+  </section>
 
 </div>

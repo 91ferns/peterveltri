@@ -1,5 +1,9 @@
 <footer class="site-footer">
 
+  <div class="container">
+    Designed and Developed by <a href="//91ferns.com" class="ferns">91ferns</a>
+  </div>
+
 </footer>
 
 <script src="{{ "/js/jquery.flexslider.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
@@ -7,7 +11,9 @@
 <script type="text/javascript">
 $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    prevText: "",           //String: Set the text for the "previous" directionNav item
+    nextText: "",
   });
 });
 </script>

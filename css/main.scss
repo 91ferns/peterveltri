@@ -6,6 +6,28 @@
 @import '_flexslider';
 
 $navheight: 60px;
+$font: "jaf-bernino-sans";
+
+@mixin header() {
+  font-family: $font, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #555;
+  margin: 0 0 0.8em;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  @include header;
+}
 
 nav.navbar {
   height: $navheight;
@@ -14,8 +36,10 @@ nav.navbar {
 .navbar-brand {
   line-height: $navheight;
   height: $navheight;
-  padding-top: 0px;
+  padding-top: 3px;
   padding-bottom: 0px;
+  @include header;
+
 }
 
 main {
@@ -26,6 +50,8 @@ main {
   //this is a slide
   min-height: 400px;
   height: 75vh;
+  padding: 0px;
+  margin: 0;
 }
 
 .flexslider {
@@ -36,4 +62,108 @@ main {
 
 .flex-control-nav {
   bottom: 20px;
+}
+
+.flex-direction-nav {
+
+  a.flex-prev {
+    left: 10px;
+    opacity: 1;
+
+    &:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f104";
+    }
+  }
+  a.flex-next {
+    right: 10px;
+    opacity: 1;
+
+    &:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f105";
+    }
+  }
+
+  a.flex-prev,
+  a.flex-next {
+    height: 70px;
+    width: 40px;
+    &:before {
+      font-size: 5em;
+    }
+  }
+
+}
+
+.bio {
+  padding: 45px 0;
+  background-color: #fefefe;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.asides {
+  background-color: #F6F6F6;
+  padding: 65px 0 45px;
+}
+
+aside.widget {
+
+  @media (min-width: $screen-sm-min) {
+    margin: 0px 13px;
+  }
+
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  padding: 60px 30px 20px;
+  text-align: center;
+
+  position: relative;
+
+  .icon {
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    top: -45px;
+    position: absolute;
+    border-radius: 45px;
+
+    left: 50%;
+    margin-left: -45px;
+
+    background-color: #3f42c3;
+    color: white;
+    line-height: 90px;
+    font-size: 50px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+}
+
+aside.widget:hover {
+  .icon {
+    top: -55px;
+    background-color: #333;
+  }
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 35px 0;
+}
+
+.ferns, a.ferns, a.ferns:link, {
+  color: #056838;
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
