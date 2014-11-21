@@ -6,7 +6,7 @@
 @import '_flexslider';
 
 $navheight: 60px;
-$footerheight: 50px;
+$footerheight: 102px;
 $font: "jaf-bernino-sans";
 
 @mixin header() {
@@ -86,7 +86,7 @@ main {
   padding-top: 59px;
 }
 
-.slider .slides > li, .slider {
+.slider .slides > li, .slider, .jumbotron {
   //this is a slide
   min-height: 400px;
   height: 75vh;
@@ -196,7 +196,11 @@ aside.widget:hover {
 footer {
   background-color: #333333;
   color: white;
-  padding: 11px 0;
+  padding: 25px 0 40px;
+
+  p {
+    line-height: $footerheight - 24 - 40;
+  }
 }
 
 .ferns, a.ferns, a.ferns:link, {
@@ -206,4 +210,18 @@ footer {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.navbar-nav > li > a {
+  line-height: 30px;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 8px;
+
+}
+
+#asides .section-title {
+  margin-bottom: 50px;
 }
