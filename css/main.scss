@@ -315,6 +315,10 @@ p, li {
   }
 }
 
+#services {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
 #empire-harley {
   background-image: url('../img/logos/empire-harley.png');
 }
@@ -341,4 +345,8 @@ p, li {
 
 #westchester-toyota {
   background-image: url('../img/logos/westchester-toyota.png');
+}
+
+.center {
+  text-align: center;
 }
