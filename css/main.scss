@@ -225,3 +225,43 @@ footer {
 #asides .section-title {
   margin-bottom: 50px;
 }
+
+.jumbotron {
+  padding-top: 30px;
+  h1, h2, h3, h5 {
+    margin: 10px 0;
+    span {
+      padding: 4px 10px;
+      display: inline-block;
+      background: rgba(0,0,0,0.5);
+      color: white;
+
+    }
+  }
+}
+
+section {
+  padding: 50px 0;
+}
+
+div.background {
+  height: 50vh;
+  width: 100%;
+  & {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: block;
+    content: " ";
+  }
+}
+
+.pad-for-widgets {
+  padding-bottom: 60px;
+}
+
+p, li {
+  font-size: 15px;
+}
