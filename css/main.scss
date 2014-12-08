@@ -266,3 +266,79 @@ div.background {
 p, li {
   font-size: 15px;
 }
+
+#dealers {
+  background-color: #F6F6F6;
+
+  .logo {
+    margin: 30px 0 0;
+    position: relative;
+    background-color: white;
+    border: 1px solid #aaa;
+    height: 200px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    span.label {
+      border-radius: 0px;
+      line-height: 26px;
+      height: 26px;
+      padding: 0px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 30px;
+      left: 0;
+      font-size: 17px;
+      color: white;
+      background: rgba(0,0,0,0.7);
+    }
+
+    span.label {
+      top: -30px;
+      -webkit-transition: top .2s; /* For Safari 3.1 to 6.0 */
+      -o-transition: top .2s;
+      -moz-transition: top .2s;
+      -ms-transition: top .2s;
+      transition: top .2s;
+    }
+
+    &:hover span.label {
+      top: 30px;
+    }
+  }
+}
+
+#empire-harley {
+  background-image: url('../img/logos/empire-harley.png');
+}
+
+#kisco-honda {
+  background-image: url('../img/logos/kisco-honda.png');
+}
+
+#newro-honda {
+  background-image: url('../img/logos/newro-honda.png');
+}
+
+#newro-toyota {
+  background-image: url('../img/logos/newro-toyota.png');
+}
+
+#rye-ford {
+  background-image: url('../img/logos/rye-ford.png');
+}
+
+#usa1-auto {
+  background-image: url('../img/logos/usa1-auto.png');
+}
+
+#westchester-toyota {
+  background-image: url('../img/logos/westchester-toyota.png');
+}
