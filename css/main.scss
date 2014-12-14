@@ -306,7 +306,7 @@ p, li {
     }
 
     span.label {
-      top: -30px;
+      top: -45px;
       -webkit-transition: top .2s; /* For Safari 3.1 to 6.0 */
       -o-transition: top .2s;
       -moz-transition: top .2s;
@@ -314,9 +314,22 @@ p, li {
       transition: top .2s;
     }
 
-    &:hover span.label {
-      top: 30px;
+    &:hover {
+      span.label {top: 45px;}
     }
+
+    &#newro-mazda,
+    &#bedford-acura,
+    &#pleasantville-ford,
+    &#acura-westchester,
+    &#greenwich-honda,
+    &#stamford-subaru,
+    &#stamford-kia {
+      span.label {
+        top: 45px;
+      }
+    }
+
   }
 }
 
