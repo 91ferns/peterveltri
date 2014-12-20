@@ -323,7 +323,7 @@ p, li {
     &:hover {
       span.label {top: 45px;}
     }
-
+    /*
     &#newro-mazda,
     &#bedford-acura,
     &#pleasantville-ford,
@@ -334,7 +334,7 @@ p, li {
       span.label {
         top: 45px;
       }
-    }
+    }*/
 
   }
 }
@@ -369,6 +369,30 @@ p, li {
 
 #westchester-toyota {
   background-image: url('../img/logos/westchester-toyota.png');
+}
+
+#newro-mazda {
+  background-image: url('../img/logos/newro-mazda.png');
+}
+
+#bedford-acura {
+  background-image: url('../img/logos/bedford-acura.png');
+}
+
+#pleasantville-ford {
+  background-image: url('../img/logos/pleasantville-ford.png');
+}
+#acura-westchester {
+  background-image: url('../img/logos/acura-westchester.png');
+}
+#greenwich-honda {
+  background-image: url('../img/logos/greenwich-honda.png');
+}
+#stamford-subaru {
+  background-image: url('../img/logos/stamford-subaru.png');
+}
+#stamford-kia {
+  background-image: url('../img/logos/stamford-kia.png');
 }
 
 .center {
