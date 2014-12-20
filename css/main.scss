@@ -39,7 +39,7 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-  height: $footerheight;
+  min-height: $footerheight;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -204,7 +204,12 @@ footer {
   padding: 25px 0 40px;
 
   p {
-    line-height: $footerheight - 24 - 40;
+    line-height:1.3;
+    @media (min-width: $screen-md-min) {
+      line-height: $footerheight - 24 - 40;
+    }
+
+
   }
 }
 
@@ -252,7 +257,7 @@ section {
 div.background {
   &.fixed {
     height: 400px;
-    height: 50vh;
+    height: 60vh;
   }
   width: 100%;
   & {
@@ -376,4 +381,19 @@ p, li {
 
 #sunset {
   background-image: url('../img/backgrounds/eric-sunset.jpg');
+}
+
+@media (max-width: $screen-sm-max) {
+  .navbar-collapse {
+    background-color: #e5e5e5;
+    border-bottom: 1px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  aside.widget {
+    margin-top: 60px;
+  }
+  .pad-for-widgets {
+    padding-bottom: 0;
+  }
 }
