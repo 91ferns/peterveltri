@@ -238,7 +238,7 @@ footer {
 
 .jumbotron {
   padding-top: 30px;
-  h1, h2, h3, h5 {
+  h1, h2, h3, h4, h5 {
     margin: 10px 0;
     span {
       padding: 4px 10px;
@@ -289,7 +289,7 @@ p, li {
     height: 200px;
 
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     overflow: hidden;
@@ -405,6 +405,14 @@ p, li {
 }
 #stamford-kia {
   background-image: url('../img/logos/stamford-kia.png');
+}
+
+#miller-motors {
+  background-image: url('../img/logos/millermotors.png');
+}
+
+#yonkers-honda {
+  background-image: url('../img/logos/yonkershonda.jpeg');
 }
 
 #wheels {
